@@ -1,6 +1,19 @@
 import React from 'react';
 import {Text, View} from 'react-native';
 
+
+
+const Header = (props) => {
+  const {textStyle, viewStyle} = styles;
+return (
+  <View style={viewStyle}>
+    <Text style={textStyle}>{props.title}</Text>
+  </View>
+);
+};
+
+export default Header;
+
 const styles = {
   textStyle: {
     fontSize: 20
@@ -18,15 +31,3 @@ const styles = {
     position: 'relative'
   }
 };
-
-const Header = (props) => {
-  const {textStyle, viewStyle} = styles;
-return (
-  <View style={viewStyle}>
-    <Text style={textStyle}>{props.title}</Text>
-  </View>
-);
-};
-
-
-export default Header;
