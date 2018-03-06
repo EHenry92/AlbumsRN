@@ -5,7 +5,7 @@ const CardSection = (props) => {
   return (
   <View style={styles.containerStyle}>
     {props.children}
-  </View>)
+  </View>);
 
 };
 export default CardSection;
@@ -21,4 +21,4 @@ const styles = {
     position: 'relative'
 
   }
-}
+};
